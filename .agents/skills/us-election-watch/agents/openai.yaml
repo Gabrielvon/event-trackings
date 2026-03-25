@@ -1,0 +1,6 @@
+interface:
+  display_name: "美国大选日报"
+  short_description: "每日跟踪美国大选民调、违章与极端风险"
+  default_prompt: "请生成今天的美国大选日报，并保存到 events/us-election/reports 目录。"
+policy:
+  allow_implicit_invocation: false

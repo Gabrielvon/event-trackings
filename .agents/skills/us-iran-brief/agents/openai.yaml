@@ -1,0 +1,6 @@
+interface:
+  display_name: "美伊局势日报"
+  short_description: "每日评估美军与伊朗在红海航运、代理人袭击等维度的风险"
+  default_prompt: "请生成今天的美伊局势日报，并保存到 events/us-iran/reports 目录。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Daily Report Log",
+  "type": "array",
+  "description": "Log of generated daily reports across different events.",
+  "items": {
+    "type": "object",
+    "required": [
+      "date",
+      "total_score",
+      "level",
+      "trend_vs_previous",
+      "key_points",
+      "file_path"
+    ],
+    "properties": {
+      "date": {
+        "type": "string",
+        "description": "The date of the report, e.g., '2026-03-25'"
+      },
+      "total_score": {
+        "type": "number",
+        "description": "The total risk score calculated for the day."
+      },
+      "level": {
+        "type": "string",
+        "description": "The risk level categorization, e.g., '绿色', '黄色', '红色'."
+      },
+      "trend_vs_previous": {
+        "type": "string",
+        "description": "The trend compared to the previous report: '升温', '降温', '持平' or 'N/A'."
+      },
+      "key_points": {
+        "type": "array",
+        "description": "List of key observation points.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "file_path": {
+        "type": "string",
+        "description": "The relative path to the generated markdown report."
+      }
+    }
+  }
+}

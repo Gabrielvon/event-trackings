@@ -1,0 +1,11 @@
+model = "gpt-5.4"
+model_provider = "openai"
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+model_verbosity = "low"
+
+[sandbox_workspace_write]
+network_access = true
+writable_roots = [
+  "e:/Repos/NRI/repos-vibe/event-trackings"
+]

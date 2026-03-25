@@ -1,0 +1,6 @@
+interface:
+  display_name: "以伊局势日报"
+  short_description: "每日评估以色列与伊朗冲突的五大维度风险"
+  default_prompt: "请生成今天的以伊局势日报，并保存到 events/israel-iran/reports 目录。"
+policy:
+  allow_implicit_invocation: false
